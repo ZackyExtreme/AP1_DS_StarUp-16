@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-
-  scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Atividade Avaliativa - AP1</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade Avaliativa - AP1</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
 
-<body>
+  <body>
 
-<center>
-  <h1>Calcular Frete</h1>
-  <input type="text" id="cep" placeholder="Digite seu CEP">
-<p></p>
-  <input type="text" id="valorP" placeholder="Digite o Valor do Produto">
-<p></p>
-  <button>Submit</button>
-<p></p>
-<input readonly type=”number” id="Frete" placeholder="Valor do Frete">
-<p></p>
-  <div id="street"></div>
-  <div id="district"></div>
-  <div id="city"></div>
-  <div id="uf"></div>
-</center>
+    <center>
+      <h1>Calcular Frete</h1>
 
-  <script src="./js/searchCEP.js"></script>
+     
+        <div>
+          <label class=entradas><input type="text" id="cep" placeholder="Digite seu CEP"></label>
+        </div>
+            <p></p>
+        <div>
+          <label class=entradas><input type="number" id="valorProduto" placeholder="Digite o Valor do Produto"></label>
+        </div>
+            <p></p>
+            <button>Submit</button>
+            <p></p>
+        <label class=valores>Frete: <input readonly type=”number” id="valorFrete"></label>
+        <br><p></p>
+        <label class=valores>Total: <input readonly type=”number” id="Total"></label>
+        <p></p>
+        <div id="street"></div>
+        <div id="district"></div>
+        <div id="city"></div>
+        <div id="uf"></div>
 
-</body>
+
+    </center>
+
+    <script src="./js/searchCEP.js">
+    
+    </script>
+
+  </body>
+</html>
